@@ -24,7 +24,7 @@ const customerRegister = async (req, res) => {
             const token = createNewToken(result._id)
 
             result = {
-                ...result._doc,
+                ...result,
                 token: token
             };
 
